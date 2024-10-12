@@ -1,22 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "target": "ESNext", // Target modern JavaScript
+    "module": "ESNext", // Use ES module system
+    "moduleResolution": "node", // Resolve modules using node conventions
+    "esModuleInterop": true, // Allow default imports from modules with no default export
+    "resolveJsonModule": true, // Allow importing JSON modules
+    "allowSyntheticDefaultImports": true, // Allow default imports even if they don't have default export
+    "jsx": "react-jsx", // Support JSX syntax
+    "strict": true, // Enable all strict type-checking options
+    "baseUrl": ".", // Set base directory for imports
+    "paths": {
+      "@components/*": ["src/components/*"] // Example of path alias for components
+    }
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "src" // Include the src folder in compilation
+  ]
 }
