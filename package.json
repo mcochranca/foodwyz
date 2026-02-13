@@ -12,7 +12,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@types/react-router-dom": "^5.3.3",
-    "axios": "^1.6.7",
+    "axios": "^1.13.5",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.344.0",
     "marked": "^12.0.0",
